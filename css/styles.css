@@ -1,0 +1,129 @@
+/* Reset básico (puedes mantener el normalice.css para un reset más profundo) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: 'Krub', sans-serif; /* Fuente importada desde Google Fonts */
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2.5em;
+    font-family: 'Jersey 10', sans-serif; /* Fuente personalizada */
+    letter-spacing: 2px;
+}
+
+/* Estilos para el menú de navegación */
+.nab-bg {
+    background-color: #333;
+}
+
+.navegador-principal {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    flex-direction: column; 
+}
+
+.navegador-principal a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 20px 20px;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.navegador-principal a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Contenedor general */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Media Queries para adaptabilidad móvil */
+@media (max-width: 768px) {
+    .navegador-principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navegador-principal a {
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+
+    .titulo {
+        font-size: 2em;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: row; /* Para alinear los bloques en dos columnas */
+    width: 80%;  /* Ajusta el ancho según tus necesidades */
+    max-width: 1200px;
+    height: 80%; /* Ajusta la altura */
+}
+
+.bloque {
+    flex: 1; /* Cada bloque toma el 50% del ancho del contenedor */
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos para el bloque izquierdo */
+.bloque-izquierdo {
+    background-color: #f9f9f9;
+}
+
+/* Estilos específicos para el bloque derecho */
+.bloque-derecho {
+    background-color: #e9f7ff;
+}
+
+/* Responsivo: cuando la pantalla es más pequeña, apilamos los bloques verticalmente */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        height: auto; /* Para que los bloques se adapten a su contenido */
+    }
+}
+
+.a{
+    font-weight: bold;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- idioma -->
+<head>    
+                       <!-- informacion del navegador -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- tamaño del texto -->
+   <title>controlfleet</title>
+<!-- lo que sigue es el estilo de la pagina css -->
+<link rel="stylesheet" href="css/normalice.css">
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<script src="msql.js"></script>
+
+</head>
+<body> <!-- lo que la gente ve -->
+
+  <header>
+     <h1 class="titulo">lista enlazada </h1>
+  </header>
+
+  <div class="nab-bg">
+
+  <nav class="navegador-principal contenedor">
+    <a href="listas2.html">listas</a> 
+       <a href="lista.html">lista enlazada</a> 
+       <a href="nosotros.html">lista enlazada doble</a> 
+       <a href="clientes.html">lista enlazada circular</a> 
+       <a href="Index.html">salir</a> 
+  </nav>
+</div>
+<main class="contenedor">
+   <div class="bloque bloque-izquierdo">
+   
+   <p>Una lista enlazada es una estructura de datos que consta de una secuencia de elementos llamados nodos, donde cada nodo contiene dos partes principales:
+
+      <p > Dato: El valor que almacena el nodo.
+         <p > Enlace o Puntero: Una referencia o puntero al siguiente nodo de la lista.
+      A diferencia de los arreglos o arrays, donde los elementos están almacenados en ubicaciones de memoria contiguas, los nodos de una lista enlazada pueden estar dispersos en memoria, pero se mantienen conectados mediante los punteros.
+      
+      <p>  Componentes de una lista enlazada:
+         <p class="a">Nodo: <p>Es la unidad básica de una lista enlazada. Un nodo contiene un valor y un puntero al siguiente nodo.
+            <p>Puntero al primer nodo (head): Es una referencia al primer nodo de la lista.
+               <p> Puntero al último nodo (tail): Este último nodo normalmente tiene su puntero siguiente apuntando a null, lo que indica el final de la lista.
+                  <p>Tipos de listas enlazadas:</p>
+                  <p>enlazada simple</p>
+                  <p>enlazada doble
+                     <p>enlazada circular</p>
+                     <p>Operaciones comunes:
+                        <p class="a">Inserción:
+                     
+                           <p> Insertar un nuevo nodo al principio de la lista.
+                     Insertar un nuevo nodo al final de la lista.
+                     Insertar un nodo en una posición específica.
+                     <p class="a">Eliminación:
+                     
+                        <p>Eliminar el primer nodo de la lista.
+                     Eliminar el último nodo.
+                     Eliminar un nodo específico que contenga un valor determinado.
+                     <p> Recorrido: Visitar cada nodo, comenzando por el nodo inicial hasta llegar al nodo final.
+                     
+                     <p class="a">Búsqueda: <p> Buscar un valor específico recorriendo los nodos uno por uno.
+                     
+                        <p class="a">Ventajas de una lista enlazada:
+                           <p> Tamaño dinámico: A diferencia de los arrays, las listas enlazadas no requieren un tamaño predefinido. Pueden crecer y reducirse dinámicamente según las necesidades.
+                     Inserciones/eliminaciones eficientes: Agregar o eliminar nodos (especialmente al principio o al final) es más eficiente que en los arrays, donde se requiere reorganizar los elementos.
+                     <p class="a">Desventajas:
+                        <p>Acceso secuencial: Para acceder a un nodo en una posición específica, es necesario recorrer la lista desde el principio hasta llegar a esa posición. Esto hace que el acceso aleatorio sea ineficiente en comparación con los arrays.
+                      Uso de memoria adicional: Cada nodo necesita almacenar un puntero, lo que implica un mayor uso de memoria en comparación con los arrays.
+   </div>
+   <div class="bloque bloque-derecho">
+   <img src="/imagenes/simple enlazada 1.png" alt="codigo" width="600" height="600">
+   <img src="/imagenes/simple enlazada 2.png" alt="codigo" width="600" height="600">
+  
+   
+   </div>
+   </main>
+
+  
+</body>
+</html>
